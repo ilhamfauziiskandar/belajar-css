@@ -1,1 +1,153 @@
-display
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        a {
+            width: 1000px;
+            height: 1000px;
+        }
+        /* tidak berpengaruh karena lebar dan tinggi
+        elementnya sesuai dengan besar konten yang ada
+        di dalam */
+
+        .navigasi1 a {
+            width: 100px;
+            height: 10px;
+            display: inline-block;
+            /* ketika diberkan display: inline-block;
+            akan berpengaruh */
+        }
+
+        .main {
+            background-color: seagreen;
+        }
+
+        .main h2, p{
+            background-color: sandybrown;
+        }
+
+        img {
+            margin-top: 10px;
+        }
+
+        .img img{
+            display: none;
+            /* maka tidak akan di tampilkan */
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html">Kembali</a>
+    <!-- <div class="header">
+        <h1>Selamat Datang di Website Kami</h1>
+    </div>
+
+
+    <div class="copyright">
+        <p>Copyright 2015, Web Programming UNPAS</p>
+    </div> -->
+
+    <ul>
+        <li>
+            <h2>Display</h2>
+            <img src="../img/css-layouting-display.JPG" alt="">
+        </li>
+        <li>
+            <h2>Default Display</h2>
+            <img src="../img/css-layouting-default-display1.JPG" alt=""><br>
+            <img src="../img/css-layouting-default-display.JPG" alt="">
+        </li>
+        <li>
+            <h2>Value Display</h2>
+            <img src="../img/css-layouting-value-display.JPG" alt="">
+            <ul>
+                <li>
+                    <h3>inline</h3>
+                    <img src="../img/css-layouting-element-inline.JPG" alt=""><br>
+                    <img src="../img/css-layouting-value-display-inline.JPG" alt="">
+                    <ul>
+                        <li>
+                            <h3>contoh</h3>
+                            <div class="navigasi">
+                                <h2>Daftar Link</h2>
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                                <a href="#">Link 4</a>
+                                <!-- ketika ditambahkan <a href="#">Link 4</a>
+                                akan ada disebelah kanan baris bukan di bawah -->
+                            </div>
+                            <img src="../img/css-layouting-element-inline-contoh.JPG" alt="">
+                            <br>
+                            <img src="../img/css-layouting-element-inline-contoh1.JPG" alt="">
+                            <br>
+                            <h4>element inline yg dapat di ubah width dan height hanya img</h4>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>inline-block</h3>
+                    <img src="../img/css-layouting-element-inline-block.JPG" alt="">
+                    <div class="navigasi1">
+                        <h2>Daftar Link</h2>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                        <a href="#">Link 4</a>
+                        <!-- ketika ditambahkan <a href="#">Link 4</a>
+                        akan ada disebelah kanan baris bukan di bawah -->
+                    </div>
+                    <ul>
+                        <li>
+                            <h3>Contoh</h3>
+                            <img src="../img/css-layouting-element-inline-block-contoh.JPG" alt="">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Block</h3>
+                    <img src="../img/css-layouting-element-block.JPG" alt=""><br>
+                    <img src="../img/css-layouting-element-block1.JPG" alt="">
+                    <ul>
+                        <div class="main">
+                            <h2>Judul Artikel</h2>
+                            <h2>Judul Artikel</h2>
+                            <img src="#" alt="">
+                            <p>
+                                <span>Lorem ipsum dolor sit amet</span>, consectur adipisicing elit. Saepe, nobis vel, libero,
+                                facilis fugiat accusamus, est aspernatur tenetur aliquid quis nisi. Architecto
+                                necessitatibus illo, ducimus, sequi unde rerum
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptas fugiat, sed
+                                doloribus excepturi cum retione aut laudantium cupiditate dolorum 
+                            </p>
+                        </div>
+                        <li>
+                            <h3>Contoh</h3>
+                            <img src="../img/css-layouting-element-block-contoh.JPG" alt="">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>None</h3>
+                    <div class="img">
+                        <img src="../img/IMG_3624.JPG" alt="">
+                    </div>
+                    <img src="../img/css-layouting-element-none.JPG" alt="">
+                    <ul>
+                        <li>
+                            <h4>contoh</h4>
+                            <img src="../img/css-layouting-element-none-contoh.JPG" alt="">
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
