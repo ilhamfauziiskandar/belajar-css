@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Margin</title>
+    <style>
+        img{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .auto{
+            width: 150px;
+            height: 150px;
+            background-color: lightpink;
+            margin: auto;
+        }
+        .auto1{
+            width: 100px;
+            height: 100px;
+            background-color: lightsalmon;
+            margin: auto;
+        }
+        .auto2{
+            width: 50px;
+            height: 50px;
+            background-color: lightseagreen;
+            margin: auto;
+        }
+        .negatifMargin{
+            width: 150px;
+            height: 150px;
+            background-color: lightpink;
+            display: inline-block;
+            margin-right: 100px;
+        }
+        .negatifMargin1{
+            width: 100px;
+            height: 100px;
+            background-color: lightsalmon;
+            display: inline-block;
+            margin-left: -200px;
+        }
+        .negatifMargin2{
+            width: 50px;
+            height: 50px;
+            background-color: lightseagreen;
+            display: inline-block;
+        }
+        .overlapping{
+            width: 150px;
+            height: 150px;
+            background-color: lightpink;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .overlapping1{
+            width: 100px;
+            height: 100px;
+            background-color:lightsalmon;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .overlapping2{
+            width: 50px;
+            height: 50px;
+            background-color: lightseagreen;
+        }
+        .overlapping_{
+            width: 150px;
+            height: 150px;
+            background-color: lightpink;
+            display: inline-block;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        .overlapping_1{
+            width: 100px;
+            height: 100px;
+            background-color: lightsalmon;
+            display: inline-block;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        .overlapping_2{
+            width: 50px;
+            height: 50px;
+            background-color: lightseagreen;
+            display: inline-block;
+        }
+        .margin{
+            width: 150px;
+            height: 150px;
+            background-color: lightpink;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        .margin1{
+            width: 100px;
+            height: 100px;
+            background-color:lightsalmon;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin-right: 25px;
+            margin-left: 25px;
+        }
+        .margin2{
+            width: 50px;
+            height: 50px;
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html">Kembali</a>
+
+    <ul>
+        <h1>Margin</h1>
+        <li>
+            <img src="../img/css-layouting-boxmodel-margin.JPG" alt="">
+            <ul>
+                <li>
+                    <h2>Cara Pakai</h2>
+                    <div class="margin">1</div>
+                    <div class="margin1">2</div>
+                    <div class="margin2">3</div>
+                    <img src="../img/css-layouting-boxmodel-margin1.JPG" alt=""><br>
+                    <img src="../img/css-layouting-boxmodel-margin2.JPG" alt="">
+                </li>
+                <li>
+                    <h2>Overlapping</h2>
+                    <ul>
+                        <li>
+                            <h4>Horizontal</h4>
+                            <div class="overlapping"></div><div class="overlapping1"></div><div class="overlapping2"></div><br>
+                            <img src="../img/css-layouting-boxmodel-overlapping-horizontal.JPG" alt="">
+                        </li>
+                        <li>
+                            <h4>Veritical</h4>
+                            <div class="overlapping_"></div><div class="overlapping_1"></div><div class="overlapping_2"></div><br>
+                            <img src="../img/css-layouting-boxmodel-overlapping-vertical.JPG" alt="">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Negatif Margin</h2>
+                    <div class="negatifMargin"></div>
+                    <div class="negatifMargin1"></div>
+                    <div class="negatifMargin2"></div>
+                    <br>
+                    <img src="../img/css-layouting-boxmodel-negatif-margin.JPG" alt="">
+                </li>
+                <li>
+                    <h2>Auto</h2>
+                    <div class="auto"></div><div class="auto1"></div><div class="auto2"></div><br>
+                    <img src="../img/css-layouting-boxmodel-auto.JPG" alt="">
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
