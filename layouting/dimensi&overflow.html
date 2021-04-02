@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensi & Overflow</title>
+    <style>
+        .dimensi1{
+            background-color: lightgreen;
+            width: 200px;
+            height: 200px;
+        }
+        .dimensi2{
+            background-color: lightsalmon;
+            width: 50%;
+            height: 70%;
+        }
+        img{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .overflow{
+            width: 150px;
+            height: 150px;
+            background-color: linen;
+        }
+        .overflow2{
+            width: 150px;
+            height: 150px;
+            background-color: linen;
+            /* dengan memberikan overflow element akan otomatis mengikuti
+            width dan height parentnya  */
+            overflow: auto;
+        }
+        .img{
+            margin-top: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html">Kembali</a>
+
+    <ul>
+        <h1>Dimensi & Overflow</h1>
+        <li>
+            <h2>Dimensi</h2>
+            <img src="../img/css-layouting-dimensi&overflow-dimensi.JPG" alt="">
+            <ul>
+                <li>
+                    <h3>contoh</h3>
+                    <div class="dimensi1">
+                        <div class="dimensi2">Menggunakan %</div>
+                    </div>
+                    <img src="../img/css-layouting-dimensi&overflow-contoh.JPG" alt="">
+                    <p>% akan mengikuti besar parentnya</p>
+                    <img src="../img/css-layouting-dimensi&overflow-contoh1.JPG" alt="">
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h2>Overflow</h2>
+            <img src="../img/css-layouting-dimensi&overflow-overflow.JPG" alt="">
+            <ul>
+                <li>
+                    <h3>contoh</h3>
+                    <div class="overflow">
+                        <!-- ketika memberikan text yang ukurannya melebihi ukuran parentnya
+                        maka text tersebut menjadi keluar dari parentnya -->
+                        <div class="overflow1">
+                            Lorem ipsum dolor sit amet, consectur adipisicing elit. Saepe, nobis vel,
+                            libero, facilis fugiat accusamus, est aspernatur tenetur aliquid quis nisi.
+                            Architecto necessitatibus illo, ducimus, sequi unde rerum
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="../img/css-layouting-dimensi&overflow-overflow-contoh.JPG" alt="">
+                    </div>
+                    <div class="overflow2">
+                        <div class="overflow1">
+                            Lorem ipsum dolor sit amet, consectur adipisicing elit. Saepe, nobis vel,
+                            libero, facilis fugiat accusamus, est aspernatur tenetur aliquid quis nisi.
+                            Architecto necessitatibus illo, ducimus, sequi unde rerum
+                        </div>
+                    </div>
+                    <img src="../img/css-layouting-dimensi&overflow-overflow-contoh2.JPG" alt="">
+                    
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
