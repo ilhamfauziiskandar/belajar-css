@@ -166,6 +166,7 @@ body {
     padding: 25px 50px 25px 50px;
     margin: auto;
     display: block;
+    overflow: auto;
 }
 .logo {
     display: inline-block;
@@ -193,6 +194,7 @@ body {
     height: auto;
     margin: 25px auto;
     display: block;
+    overflow: auto;
 }
 .column1, .column2, .column3 {
     margin: 25px;
@@ -263,4 +265,26 @@ body {
 .column3 img {
     width: 149px;
     border: 1px solid darkslategray;
+}
+
+.footer {
+    background-color: olive;
+    margin: auto;
+    padding: 15px;
+    display: block;
+    overflow: auto;
+}
+.footer h3 {
+    font-size: 20px;
+    color: white;
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.footer p {
+    
+    float: left;
+    font-size: 15px;
+    color: white;
 }
