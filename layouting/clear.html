@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear</title>
+    <style>
+        .containt {
+            display: block;
+            margin: auto;
+        }
+        .containt img {
+            display: inline;
+            margin: 15px;
+        }
+        .container {
+            width: 600px;
+            margin: auto;
+            border: 1px solid black;
+            padding: 20px;
+            overflow: auto;
+            display: inline-block;
+        }
+        .container1 {
+            width: 600px;
+            margin: auto;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        .clear {
+            /* bila float di left
+            maka value di ubah left */
+            clear: left;
+        }
+        .container img {
+            width: 400px;
+            height: 300px;
+            float: left;
+            margin-right: 10px;
+        }
+        .container p{
+            margin: 0;
+            text-align: justify;
+        }
+        .kotak {
+            width: 80px;
+            height: 80px;
+            background-color: salmon;
+            color: white;
+            text-align: center;
+            line-height: 80px;
+            font-size: 30px;
+            margin: 2px;
+            float: left;
+        }
+        .kiri {
+            width: 150px;
+            background-color: teal;
+            height: 500px;
+            float: left;
+        }
+        .tengah {
+            width: 300px;
+            background-color: thistle;
+            height: 500px;
+            float: left;
+        }
+        .kanan{
+            width: 150px;
+            background-color: tomato;
+            height: 500px;
+            float: left;
+        }
+        .cf:before, .cf:after{
+            content: " ";
+            display: table;
+        }
+        .cf::after {
+            clear: both;
+        }
+        .cf {
+            *zoom: 1;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html">Kembali</a>
+    <ul>
+        <h1>Clear</h1>
+        <p>/a Membersihkan Float</p>
+        <img src="../img/css-layouting-clear.JPG" alt="">
+        <li>
+            <h3>Overflow</h3>
+            <img src="../img/css-layouting-clear-overflow.JPG" alt="">
+            <div class="container">
+                <img src="../img/IMG_3624.JPG" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </li>
+        <li>
+            <h3>< div > kosong</h3>
+            <div class="container1">
+                <div class="kotak">1</div>
+                <div class="kotak">2</div>
+                <div class="kotak">3</div>
+                <div class="kotak">4</div>
+                <div class="kotak">5</div>
+                <div class="kotak">6</div>
+                <div class="kotak">7</div>
+                <div class="kotak">8</div>
+                <div class="kotak">9</div>
+                <div class="kotak">10</div>
+                <div class="clear"></div>        
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="containt">
+                <img src="../img/css-layouting-clear-div-kosong.JPG" alt="">
+                <img src="../img/css-layouting-clear-div-kosong1.JPG" alt="">
+            </div>
+        </li>
+        <li>
+            <h3>
+                Clearfix
+            </h3>
+            <!-- tambahkan cf pada class parentnya -->
+            <div class="container1 cf">
+                <div class="kiri"></div>
+                <div class="tengah"></div>
+                <div class="kanan"></div>
+            </div>
+            <div class="containt">
+                <img src="../img/css-layouting-clear-clearfix.JPG" alt="">
+                <img src="../img/css-layouting-clear-clearfix1.JPG" alt="">
+            </div>
+        </li>
+    </ul>   
+</body>
+</html>
