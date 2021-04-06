@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.kembali{
+    display: block;
+    margin: 0px 25px;
+    width: 55px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: coral;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.kembali:hover {
+    background-color: darksalmon;
+    color: darkslateblue;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px, 15px;
+    background-color: lightgray;
+}
+
+.container{
+    margin: auto;
+}
+
+.navbar {
+    background-color: olive;
+    padding: 25px 50px 25px 50px;
+    margin: auto;
+    display: block;
+}
+.logo {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.menu{
+    float: right;
+}
+.submenu {
+    display: inline-block;
+    margin-right: 75px;
+}
+.menu ul li a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+.menu ul li a:hover {
+    color:orangered;
+}
+.content {
+    width: fit-content;
+    height: auto;
+    margin: 25px auto;
+    display: block;
+}
+.column1, .column2, .column3 {
+    margin: 25px;
+    padding: 25px;
+    display: block;
+}
+
+.column1{
+    float: left;
+    width: 150px;
+    background-color: white;
+}
+
+.column1 img {
+    width: 150px;
+    height: 100px;
+}
+
+.column1 p {
+    text-align: justify;
+    font-size: 12px;
+}
+
+.column2{
+    float: left;
+    width: 600px;
+    background-color: white;
+}
+
+.main-content {
+    font-size: 15px;
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+}
+.judul{
+    margin-bottom: 25px;
+}
+
+.judul h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.judul a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.isi-content {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.gambar-content {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin: 25px;
+}
+
+.column3{
+    float: left;
+    width: 150px;
+    background-color: white;
+}
+
+.column3 img {
+    width: 149px;
+    border: 1px solid darkslategray;
+}
