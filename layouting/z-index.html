@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        .zindex{
+            position: relative;
+            width: 600px;
+            border: 1px solid black;
+            display: block;
+            margin: auto;
+        }
+        .satu { 
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+            position: absolute;
+            top: 300px;
+            left: 100px;
+            z-index: 1;
+        }
+        .dua {
+            width: 200px;
+            height: 200px;
+            background-color: burlywood;
+            position: absolute;
+            top: 200px;
+            left: 0px;
+        }
+        .tiga {
+            width: 200px;
+            height: 200px;
+            background-color: coral;
+            position: absolute;
+            top: 100px;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html">Kembali</a>
+    <ul>
+        <h1>Z-Index</h1>
+        <li>
+            <div class="zindex">
+                <div class="satu"></div>
+                <div class="dua"></div>
+                <div class="tiga"></div>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
