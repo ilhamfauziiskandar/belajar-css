@@ -87,6 +87,11 @@ body{
     position: absolute;
     top: 10px;
     right: 10px;
+    background-image: url("../img/behance.png");
+}
+.icon:hover {
+    background-color: teal;
+    opacity: 75%;
 }
 .judul{
     font-size: 24px;
