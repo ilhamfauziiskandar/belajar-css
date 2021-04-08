@@ -1,0 +1,240 @@
+.container {
+    width: 1000px;
+    margin: 0px;;
+}
+.cf:before, .cf:after{
+    content: " ";
+    display: table;
+}
+.cf::after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+.img-definisi {
+    margin: 0px;
+    width: 400px;
+    height: 200px;
+    padding: 5px;
+    display: inline-block;
+}
+.img-code {
+    margin: auto;
+    padding: 5px;
+    display: inline-block;
+}
+.content {
+    width: 800px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.isi-content {
+    width: 420px;
+    margin: auto;
+    border: 1px solid black;
+}
+.isi-content1 {
+    width: 420px;
+    height: 420px;
+    margin: auto;
+    border: 1px solid black;
+}
+.box {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+.box1 {
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    line-height: 90px;
+    text-align: center;
+    font-weight: bold;
+}
+.box2 {
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+    line-height: 120px;
+    text-align: center;
+    font-weight: bold;
+}
+.box3 {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    line-height: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+.box4 {
+    width: 150px;
+    margin: 5px;
+    line-height: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+.box-no-size {
+    margin: 2px;
+}
+.persegi {
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+.persegi1 {
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+.persegi2 {
+    width: 200px;
+    height: 50px;
+    margin: 5px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+.persegi3 {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+.satu {
+    background-color: cadetblue;
+}
+.dua {
+    background-color: coral;
+}
+.tiga {
+    background-color: indianred;
+}
+.empat {
+    background-color: salmon;
+}
+.lima {
+    background-color: teal;
+}
+.enam {
+    background-color: tan;
+}
+.flex {
+    display: flex;
+}
+.flex-direction-row{
+    flex-direction: row;
+}
+.flex-direction-row-reverse{
+    flex-direction: row-reverse;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+.flex-direction-column-reverse{
+    flex-direction: column-reverse;
+}
+.flex-wrap-no-wrap{
+    flex-wrap: nowrap;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-wrap-reverse{
+    flex-wrap: wrap-reverse;
+}
+.justify-flex-start{
+    justify-content: flex-start;
+}
+.justify-flex-end{
+    justify-content: flex-end;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-space-between{
+    justify-content: space-between;
+}
+.justify-space-around {
+    justify-content: space-around;
+}
+.justify-space-evenly {
+    justify-content: space-evenly;
+}
+.align-items-flex-start {
+    align-items: flex-start;
+}
+.align-items-flex-end {
+    align-items: flex-end;
+}
+.align-items-center {
+    align-items: center;
+}
+.align-items-stretch{
+    align-items: stretch;
+}
+.align-items-baseline {
+    align-items: baseline;
+}
+
+/* untuk menggunakan align-content
+element parent harus memiliki propert wrap */
+
+.align-content-flex-start {
+    align-content: flex-start;
+}
+.align-content-flex-end {
+    align-content: flex-end;
+}
+.align-content-center {
+    align-content: center;
+}
+.align-content-stretch {
+    align-content: stretch;
+}
+.align-content-space-between {
+    align-content: space-between;
+}
+.align-content-space-around {
+    align-content: space-around;
+}
+.order-1 {
+    order: 1;
+}
+.order-2 {
+    order: 2;
+}
+.order-3 {
+    order: 3;
+}
+.order-4 {
+    order: 4;
+}
+.flex-grow {
+    flex-grow: 0;
+}
+.flex-grow1 {
+    flex-grow: 1;
+}
+.flex-grow2 {
+    flex-grow: 2;
+}
+.flex-grow3 {
+    flex-grow: 3;
+}
+.align-self {
+    align-self: flex-end;
+}
