@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: cadetblue;
+    justify-content: space-around;
+    padding: 20px 0;
+    color: rgb(210, 234, 235);
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    width: 40%;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(210, 234, 235);
+    font-size: 1em;
+}
+
+nav ul li a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+nav .logo {
+    font-size: 1.5em;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color:rgb(210, 234, 235);
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+}
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+/* screen width */
+@media screen and (max-width: 768px){
+    nav ul {
+        width: 50%;
+    }
+}
+
+/* phone width */
+@media screen and (max-width: 414px){
+    nav .logo{
+        font-size: 1.25em;
+    }
+    .menu-toggle{
+        display: flex;
+    }
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color:  cadetblue;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
